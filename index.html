@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meashra | Verifiable identity for AI agents</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='27 26 1297 1162'%3E%3Cpolygon fill='%232DD4A8' points='27,26 409,26 676,645 942,26 1324,26 1324,1188 1040,1188 1038,347 768,966 583,966 313,347 311,1188 27,1188'/%3E%3C/svg%3E">
 <meta name="description" content="Identity security for AI agents, cryptographically verifiable by anyone. Blockchain-anchored W3C DIDs, short-lived AWS credentials, public registry.">
 <style>
 :root{--bg:#0b1220;--panel:#111c30;--line:#1f3049;--text:#e8eef7;--mute:#9fb0c6;--acc:#2dd4a8;--acc-ink:#06201a;--red:#f0716b}
@@ -14,8 +15,9 @@ body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 header{border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-weight:700;font-size:20px;letter-spacing:.2px;color:var(--text);text-decoration:none}
+.logo{display:inline-flex;align-items:center;font-weight:700;font-size:20px;letter-spacing:.2px;color:var(--text);text-decoration:none}
 .logo span{color:var(--acc)}
+.mark{height:22px;width:auto;fill:var(--acc);flex:none;margin-right:10px}
 nav a{color:var(--mute);text-decoration:none;margin-left:20px;font-size:14px}
 nav a:hover{color:var(--text)}
 .badge{display:inline-block;font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:3px 12px}
@@ -52,8 +54,8 @@ footer a{color:var(--mute)}
 </head>
 <body>
 <header><div class="wrap">
-  <a class="logo" href="/">Meas<span>hra</span></a>
-  <nav><a href="#problem">Problem</a><a href="#how">How it works</a><a href="#verify">Verify</a><a class="keep" href="https://app.meashra.com">Sign in</a></nav>
+  <a class="logo" href="/"><svg class="mark" viewBox="27 26 1297 1162" aria-hidden="true"><polygon points="27,26 409,26 676,645 942,26 1324,26 1324,1188 1040,1188 1038,347 768,966 583,966 313,347 311,1188 27,1188"/></svg>Meas<span>hra</span></a>
+  <nav><a href="#problem">Problem</a><a href="#how">How it works</a><a href="#verify">Verify</a><a class="keep" href="https://app.meashra.com" target="_blank" rel="noopener">Sign in</a></nav>
 </div></header>
 
 <main>
@@ -64,7 +66,7 @@ footer a{color:var(--mute)}
     <p class="lead">Meashra is identity security for AI agents, made cryptographically verifiable: a blockchain-anchored decentralized identity behind every credential request, not just managed access.</p>
     <div class="btns">
       <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
-      <a class="btn s" href="https://verify.meashra.com">Verify an agent</a>
+      <a class="btn s" href="https://verify.meashra.com" target="_blank" rel="noopener">Verify an agent</a>
     </div>
   </div>
 </div>
@@ -108,7 +110,7 @@ footer a{color:var(--mute)}
   <h2>Check an agent yourself</h2>
   <div class="verify">
     <p>The public verifier reads Meashra’s public registry (Ethereum Sepolia testnet) directly. It calls no Meashra server and needs no account or key of ours. It shows whether an agent is registered, whether it was revoked, and whether a presented DID document matches the chain.</p>
-    <a class="btn p" href="https://verify.meashra.com">Open the verifier</a>
+    <a class="btn p" href="https://verify.meashra.com" target="_blank" rel="noopener">Open the verifier</a>
   </div>
 </div></section>
 
@@ -118,13 +120,12 @@ footer a{color:var(--mute)}
   <p>The end-to-end flow (DID, verifiable credential, OIDC, real AWS STS credentials) is verified in the live beta on Sepolia testnet and available to select design partners. If you run AI agents against AWS and want to shape the product, we would like to hear from you.</p>
   <div class="btns" style="margin-top:20px">
     <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
-    <a class="btn s" href="https://app.meashra.com">Sign in to the early-access dashboard</a>
+    <a class="btn s" href="https://app.meashra.com" target="_blank" rel="noopener">Sign in to the early-access dashboard</a>
   </div>
 </div></section>
 </main>
 
 <footer><div class="wrap">
-  <a href="https://meashra.com">meashra.com</a> · <a href="mailto:eilam@meashra.com">eilam@meashra.com</a><br>
   © 2026 Meashra. Blockchain-anchored identity for AI agents.
 </div></footer>
 </body>
