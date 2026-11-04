@@ -20,12 +20,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 nav a{color:var(--mute);text-decoration:none;margin-left:20px;font-size:14px}
 nav a:hover{color:var(--text)}
 .badge{display:inline-block;font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:3px 12px}
-.hero{padding:72px 0 56px;display:flex;align-items:center;justify-content:space-between;gap:40px}
-.copy{flex:1;min-width:0}
-.emblem{flex:none;width:340px}
-.emblem svg{width:100%;height:auto;display:block}
-.emblem .ring{fill:none;stroke:var(--acc);stroke-width:2;opacity:.3}
-.emblem .m{fill:var(--acc)}
+.hero{padding:72px 0 56px}
 h1{font-size:clamp(32px,5.5vw,54px);line-height:1.1;margin:18px 0 18px;max-width:18ch}
 .lead{color:var(--mute);font-size:19px;max-width:62ch;margin:0 0 28px}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
@@ -52,7 +47,7 @@ p{margin:0 0 14px}
 .status{font-size:14px;color:var(--mute);border-top:1px dashed var(--line);margin-top:20px;padding-top:14px}
 footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mute);font-size:14px}
 footer a{color:var(--mute)}
-@media(max-width:820px){.steps{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}nav a:not(.keep){display:none}.hero{padding:48px 0 40px}.emblem{display:none}}
+@media(max-width:820px){.steps{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}nav a:not(.keep){display:none}.hero{padding:48px 0 40px}}
 @media(max-width:480px){.steps{grid-template-columns:1fr}}
 </style>
 </head>
@@ -65,7 +60,6 @@ footer a{color:var(--mute)}
 <main>
 <div class="wrap">
   <div class="hero">
-    <div class="copy">
     <span class="badge">Early access · Design partners welcome</span>
     <h1>Every AI agent deserves an identity anyone can verify</h1>
     <p class="lead">Meashra is identity security for AI agents, made cryptographically verifiable: a blockchain-anchored decentralized identity behind every credential request, not just managed access.</p>
@@ -73,8 +67,6 @@ footer a{color:var(--mute)}
       <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
       <a class="btn s" href="https://verify.meashra.com" target="_blank" rel="noopener">Verify an agent</a>
     </div>
-    </div>
-    <div class="emblem" aria-hidden="true"><svg viewBox="0 0 400 400"><circle class="ring" cx="200" cy="200" r="198"/><circle class="ring" cx="200" cy="200" r="150"/><g transform="translate(115.5,124.5) scale(0.13)"><polygon class="m" transform="translate(-27,-26)" points="27,26 409,26 676,645 942,26 1324,26 1324,1188 1040,1188 1038,347 768,966 583,966 313,347 311,1188 27,1188"/></g></svg></div>
   </div>
 </div>
 
@@ -123,7 +115,7 @@ footer a{color:var(--mute)}
 
 <section id="partners"><div class="wrap">
   <div class="eyebrow">Early access</div>
-  <h2>Looking for a few design partners</h2>
+  <h2>Design partners</h2>
   <p>The end-to-end flow (DID, verifiable credential, OIDC, real AWS STS credentials) is verified in the live beta on Sepolia testnet and available to select design partners. If you run AI agents against AWS and want to shape the product, we would like to hear from you.</p>
   <div class="btns" style="margin-top:20px">
     <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
