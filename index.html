@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meashra | Verifiable identity for AI agents</title>
+<title>Meashra | Trust between organizations for AI agents</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='%230F172A'/%3E%3Cg transform='translate(42,44) scale(0.1295)'%3E%3Cpolygon fill='%232DD4A8' transform='translate(-27,-26)' points='27,26 409,26 676,645 942,26 1324,26 1324,1188 1040,1188 1038,347 768,966 583,966 313,347 311,1188 27,1188'/%3E%3C/g%3E%3C/svg%3E">
-<meta name="description" content="Identity security for AI agents, cryptographically verifiable by anyone. Blockchain-anchored W3C DIDs, short-lived AWS credentials, public registry.">
+<meta name="description" content="A neutral trust layer for AI agents: any organization can verify another’s agents. W3C DIDs, public registry, public verifier.">
 <style>
 :root{--bg:#0b1220;--panel:#111c30;--line:#1f3049;--text:#e8eef7;--mute:#9fb0c6;--acc:#2dd4a8;--acc-ink:#06201a;--red:#f0716b}
 @media (prefers-color-scheme: light){:root{--bg:#f6f8fb;--panel:#fff;--line:#d9e1ec;--text:#0f1b2d;--mute:#4a5b73;--acc:#0b8f70;--acc-ink:#fff;--red:#c2382f}}
@@ -61,8 +61,8 @@ footer a{color:var(--mute)}
 <div class="wrap">
   <div class="hero">
     <span class="badge">Early access · Design partners welcome</span>
-    <h1>Every AI agent deserves an identity anyone can verify</h1>
-    <p class="lead">Meashra is identity security for AI agents, made cryptographically verifiable: a blockchain-anchored decentralized identity behind every credential request, not just managed access.</p>
+    <h1>Know which AI agent you’re dealing with</h1>
+    <p class="lead">Meashra is identity security for AI agents, made cryptographically verifiable: an identity behind every agent that anyone can verify on a public record, so any organization can check another company’s agents without relying on a vendor’s word.</p>
     <div class="btns">
       <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
       <a class="btn s" href="https://verify.meashra.com" target="_blank" rel="noopener">Verify an agent</a>
@@ -72,36 +72,34 @@ footer a{color:var(--mute)}
 
 <section id="problem"><div class="wrap">
   <div class="eyebrow">The problem</div>
-  <h2>Who vouches for an agent’s identity?</h2>
-  <div class="problem">NHI vendors issue agent identities and enforce their access. But if there’s a security breach and a customer, insurer or auditor asks a CISO which agent acted and when its access was revoked, the answer comes from the company’s own NHI vendor. If that vendor’s records are disputed, unavailable or can’t be checked by anyone but the vendor, the CISO cannot independently prove which agent it was, so cannot establish who is liable or tell customers and regulators what was affected within legal deadlines.</div>
+  <h2>Who vouches for this AI agent?</h2>
+  <div class="problem">Picture a hedge fund’s AI execution agent requesting access to an exchange. The exchange can only trust the fund’s own systems, and a malicious agent can cause losses faster than a human fraudster (Forrester, Feb 2026). The other side needs three answers: who the agent is, what it is authorized to do, and whether it has been revoked. Each vendor vouches only inside its own system, and your own audit logs show only your side. Identity platforms answer who can access your systems; nobody answers why you should trust another company’s agent.</div>
 </div></section>
 
 <section id="how"><div class="wrap">
   <div class="eyebrow">How it works</div>
-  <h2>From provisioning to verified cloud access</h2>
-  <p class="mute">Five steps. Agent registration and revocation are anchored on-chain.</p>
+  <h2>From agent identity to cross-organization verification</h2>
+  <p class="mute">Five steps. Registration and revocation are recorded on a public chain. As SSL did for websites, every agent that crosses a company line will need a check anyone can verify.</p>
   <ol class="steps">
     <li><b>Provision</b>Unique DID anchored on Ethereum</li>
     <li><b>Credential</b>Agent self-signs a verifiable credential</li>
     <li><b>Policy check</b>Real-time enforcement at the OIDC layer</li>
     <li><b>AWS access</b>1-hour STS credentials issued</li>
-    <li><b>Audit</b>Identity anchored on-chain</li>
+    <li><b>Verify</b>Any organization checks the agent, no account</li>
   </ol>
 </div></section>
 
 <section id="why"><div class="wrap">
   <div class="eyebrow">Why Meashra</div>
-  <h2>The trust layer your agents are missing</h2>
-  <p class="mute">Built on open standards. Enforced at the identity layer.</p>
+  <h2>What another organization can check</h2>
+  <p class="mute">Three signals any organization can check. Attribution and KYB linkage are the funded build.</p>
   <div class="grid">
-    <div class="card"><h3>Blockchain-anchored DIDs</h3><p>Every agent gets a W3C Decentralized Identifier anchored on Ethereum. Portable, standards-based, cross-enterprise. Agent keys are designed for MPC threshold custody, so no single party, including us, can forge an identity record.</p></div>
-    <div class="card"><h3>Verifiable by design</h3><p>Registrations and revocations are public and checkable by anyone, with no account. Policy runs at the OIDC layer today; smart-contract enforcement is on the roadmap.</p></div>
-    <div class="card"><h3>Real-time policy enforcement</h3><p>Time-window policies gate every credential request at the OIDC layer, not after the fact.</p></div>
-    <div class="card"><h3>Designed for audit evidence</h3><p>Agent identity and revocation are recorded on-chain, so anyone can check them without relying on the vendor. Access events are designed to be anchored on-chain as a Merkle root.</p></div>
-    <div class="card"><h3>Revocation on-chain</h3><p>Revoke any agent on-chain in seconds. New credential issuance stops immediately; credentials already issued expire within their one-hour lifetime.</p></div>
-    <div class="card"><h3>Enterprise role separation</h3><p>CISO, DevOps and Security Engineer roles with distinct dashboard access, approval queues and governance controls.</p></div>
+    <div class="card"><h3>Who the agent is</h3><p>Cryptographic proof that the caller controls the agent’s identity key (its DID), and that it is registered, with who registered it and when. Live on testnet.</p></div>
+    <div class="card"><h3>What it’s authorized to do</h3><p>A credential stating the agent’s permissions. The permissions part is live. Spending limits and scope per agent are funded, not built; enforced outside the agent, they cap the damage if an agent is manipulated.</p></div>
+    <div class="card"><h3>Whether it has been revoked</h3><p>Public, final revocation, with block and time shown. Live on testnet.</p></div>
+    <div class="card"><h3>What’s next (funded build)</h3><p>Attribution: access events anchored as Merkle roots, so a disputed action can be traced to an agent. KYB linkage ties an agent to a verified business.</p></div>
   </div>
-  <p class="status">Status: registry on testnet; MPC custody and anchored access events are the funded build.</p>
+  <p class="status">Status: identity and revocation run on testnet; permissions are live, limits and scope are funded. Attribution and KYB linkage are the funded build. Meashra caps damage and makes agents traceable; it does not detect fraud or stop an agent being manipulated.</p>
 </div></section>
 
 <section id="verify"><div class="wrap">
@@ -116,7 +114,10 @@ footer a{color:var(--mute)}
 <section id="partners"><div class="wrap">
   <div class="eyebrow">Early access</div>
   <h2>Design partners</h2>
-  <p>The end-to-end flow (DID, verifiable credential, OIDC, real AWS STS credentials) is verified in the live beta on Sepolia testnet and available to select design partners. If you run AI agents against AWS and want to shape the product, we would like to hear from you.</p>
+  <p>We are working with a small number of design partners to shape how agents get verified. We would like to hear from regulated organizations (financial services, fintech and crypto platforms, payment providers) that receive agent traffic from other companies, and from companies running AI agents that need their partners to trust them.</p>
+  <p style="margin-top:14px"><b>What you get:</b> direct access to the founders, a say in the credential format, authority limits and verifier, and early access to the live beta (Ethereum Sepolia testnet).</p>
+  <p style="margin-top:14px"><b>What we ask:</b> 30 minutes to tell us how you check another company’s agent today, and what you cannot check.</p>
+  <p style="margin-top:14px"><b>How it is meant to work:</b> the organization running an agent enrolls it and pays per agent; the organizations that deal with it verify for free. We want to test whether counterparties will ask for this.</p>
   <div class="btns" style="margin-top:20px">
     <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
     <a class="btn s" href="https://accounts.meashra.com/sign-in" target="_blank" rel="noopener">Sign in to the early-access dashboard</a>
