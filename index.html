@@ -74,19 +74,19 @@ footer a{color:var(--mute)}
 <section id="problem"><div class="wrap">
   <div class="eyebrow">The problem</div>
   <h2>Trust breaks when one company’s agent acts on another’s systems</h2>
-  <div class="problem">Picture a hedge fund’s AI execution agent requesting access to an exchange. The exchange can only trust the fund’s own systems, and a malicious agent can act faster than a human fraudster. The other side needs three answers: who the agent is, what it is authorized to do, and whether it has been revoked. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
+  <div class="problem">Picture a hedge fund’s AI execution agent requesting access to an exchange. The exchange has no independent way to verify the agent, and a malicious agent can act faster than a human fraudster. The other side needs three answers: who the agent is, what it is authorized to do, and whether it has been revoked. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
   <p class="callout">Identity platforms answer who can access your systems. Nobody answers why you should trust another company’s agent.</p>
 </div></section>
 
 <section id="how"><div class="wrap">
   <div class="eyebrow">How it works</div>
   <h2>From agent identity to cross-organization verification</h2>
-  <p class="mute">Five steps. Registration and revocation are recorded on a public chain. As SSL did for websites, every agent that crosses a company line will need a check anyone can verify.</p>
+  <p class="mute">Five steps. Agent identity and revocation can be independently verified by any organization, with the record kept on a public chain. As SSL did for websites, every agent that crosses a company line will need a check anyone can verify.</p>
   <ol class="steps">
     <li><b>Provision</b>Unique DID anchored on Ethereum</li>
     <li><b>Credential</b>Agent self-signs a verifiable credential</li>
     <li><b>Policy check</b>Real-time enforcement at the OIDC layer</li>
-    <li><b>AWS access</b>1-hour STS credentials issued</li>
+    <li><b>AWS access</b>Short-lived STS credentials issued</li>
     <li><b>Verify</b>Any organization checks the agent, no account</li>
   </ol>
 </div></section>
@@ -94,14 +94,14 @@ footer a{color:var(--mute)}
 <section id="why"><div class="wrap">
   <div class="eyebrow">Why Meashra</div>
   <h2>What another organization can check</h2>
-  <p class="mute">Three signals any organization can check. Attribution and KYB linkage are planned.</p>
+  <p class="mute">Three things every counterparty needs to know. Attribution and KYB linkage are next.</p>
   <div class="grid">
     <div class="card"><h3>Who the agent is</h3><p>Cryptographic proof that the caller controls the agent’s identity key (its DID), and that it is registered, with who registered it and when. Live on testnet.</p></div>
-    <div class="card"><h3>What it’s authorized to do</h3><p>A credential stating the agent’s permissions. The permissions part is live. Spending limits and scope per agent are planned, not built; enforced outside the agent, they cap the damage if an agent is manipulated.</p></div>
+    <div class="card"><h3>What it’s authorized to do</h3><p>A credential stating the agent’s permissions. The permissions part is live. Spending limits and scope per agent are next, not built; enforced outside the agent, they cap the damage if an agent is manipulated.</p></div>
     <div class="card"><h3>Whether it has been revoked</h3><p>Public, final revocation, with block and time shown. Live on testnet.</p></div>
     <div class="card"><h3>What we’re building next</h3><p>Attribution: access events anchored as Merkle roots, so a disputed action can be traced to an agent. KYB linkage ties an agent to a verified business.</p></div>
   </div>
-  <p class="status">Status: identity and revocation run on testnet; permissions are live; limits and scope, attribution and KYB linkage are planned. Meashra caps damage and makes agents traceable; it does not detect fraud or stop an agent being manipulated.</p>
+  <p class="status">Status: identity and revocation run on testnet; permissions are live; limits and scope, attribution and KYB linkage are next. Meashra caps damage and makes agents traceable; it does not detect fraud or stop an agent being manipulated.</p>
 </div></section>
 
 <section id="verify"><div class="wrap">
@@ -118,7 +118,7 @@ footer a{color:var(--mute)}
   <h2>Design partners</h2>
   <p>We are working with a small number of design partners to shape how agents get verified. We would like to hear from regulated organizations (financial services, fintech and crypto platforms, payment providers) that receive agent traffic from other companies, and from companies running AI agents that need their partners to trust them.</p>
   <p style="margin-top:14px"><b>What you get:</b> direct access to the founders, a say in the credential format, authority limits and verifier, and early access to the live beta (Ethereum Sepolia testnet).</p>
-  <p style="margin-top:14px"><b>What we ask:</b> 30 minutes to tell us how you check another company’s agent today, and what you cannot check.</p>
+  <p style="margin-top:14px"><b>What we ask:</b> 5 minutes to tell us how you check another company’s agent today, and what you cannot check.</p>
   <p style="margin-top:14px"><b>How it is meant to work:</b> the organization running an agent enrolls it and pays per agent; the organizations that deal with it verify for free. We are looking for the first counterparties to ask their agent partners to enroll.</p>
   <div class="btns" style="margin-top:20px">
     <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
