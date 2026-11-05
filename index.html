@@ -44,6 +44,7 @@ p{margin:0 0 14px}
 .card p{margin:0;color:var(--mute);font-size:15px}
 .verify{background:var(--panel);border:1px solid var(--acc);border-radius:14px;padding:28px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
 .verify p{margin:0;max-width:56ch}
+.callout{font-size:clamp(20px,3vw,28px);font-weight:700;line-height:1.3;max-width:36ch;margin:32px 0 0;padding-left:16px;border-left:4px solid var(--acc)}
 .status{font-size:14px;color:var(--mute);border-top:1px dashed var(--line);margin-top:20px;padding-top:14px}
 footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mute);font-size:14px}
 footer a{color:var(--mute)}
@@ -61,8 +62,8 @@ footer a{color:var(--mute)}
 <div class="wrap">
   <div class="hero">
     <span class="badge">Early access · Design partners welcome</span>
-    <h1>Know which AI agent you’re dealing with</h1>
-    <p class="lead">Meashra is identity security for AI agents, made cryptographically verifiable: an identity behind every agent that anyone can verify on a public record, so any organization can check another company’s agents without relying on a vendor’s word.</p>
+    <h1>Who vouches for this AI agent?</h1>
+    <p class="lead">A neutral verification layer: any organization can independently verify another company’s AI agents. Who they are, what they may do, and whether they’ve been revoked.</p>
     <div class="btns">
       <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
       <a class="btn s" href="https://verify.meashra.com" target="_blank" rel="noopener">Verify an agent</a>
@@ -72,8 +73,9 @@ footer a{color:var(--mute)}
 
 <section id="problem"><div class="wrap">
   <div class="eyebrow">The problem</div>
-  <h2>Who vouches for this AI agent?</h2>
-  <div class="problem">Picture a hedge fund’s AI execution agent requesting access to an exchange. The exchange can only trust the fund’s own systems, and a malicious agent can act faster than a human fraudster. The other side needs three answers: who the agent is, what it is authorized to do, and whether it has been revoked. Each vendor vouches only inside its own system, and your own audit logs show only your side. Identity platforms answer who can access your systems; nobody answers why you should trust another company’s agent.</div>
+  <h2>Trust breaks when one company’s agent acts on another’s systems</h2>
+  <div class="problem">Picture a hedge fund’s AI execution agent requesting access to an exchange. The exchange can only trust the fund’s own systems, and a malicious agent can act faster than a human fraudster. The other side needs three answers: who the agent is, what it is authorized to do, and whether it has been revoked. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
+  <p class="callout">Identity platforms answer who can access your systems. Nobody answers why you should trust another company’s agent.</p>
 </div></section>
 
 <section id="how"><div class="wrap">
@@ -92,14 +94,14 @@ footer a{color:var(--mute)}
 <section id="why"><div class="wrap">
   <div class="eyebrow">Why Meashra</div>
   <h2>What another organization can check</h2>
-  <p class="mute">Three signals any organization can check. Attribution and KYB linkage are the funded build.</p>
+  <p class="mute">Three signals any organization can check. Attribution and KYB linkage are planned.</p>
   <div class="grid">
     <div class="card"><h3>Who the agent is</h3><p>Cryptographic proof that the caller controls the agent’s identity key (its DID), and that it is registered, with who registered it and when. Live on testnet.</p></div>
-    <div class="card"><h3>What it’s authorized to do</h3><p>A credential stating the agent’s permissions. The permissions part is live. Spending limits and scope per agent are funded, not built; enforced outside the agent, they cap the damage if an agent is manipulated.</p></div>
+    <div class="card"><h3>What it’s authorized to do</h3><p>A credential stating the agent’s permissions. The permissions part is live. Spending limits and scope per agent are planned, not built; enforced outside the agent, they cap the damage if an agent is manipulated.</p></div>
     <div class="card"><h3>Whether it has been revoked</h3><p>Public, final revocation, with block and time shown. Live on testnet.</p></div>
-    <div class="card"><h3>What’s next (funded build)</h3><p>Attribution: access events anchored as Merkle roots, so a disputed action can be traced to an agent. KYB linkage ties an agent to a verified business.</p></div>
+    <div class="card"><h3>What we’re building next</h3><p>Attribution: access events anchored as Merkle roots, so a disputed action can be traced to an agent. KYB linkage ties an agent to a verified business.</p></div>
   </div>
-  <p class="status">Status: identity and revocation run on testnet; permissions are live, limits and scope are funded. Attribution and KYB linkage are the funded build. Meashra caps damage and makes agents traceable; it does not detect fraud or stop an agent being manipulated.</p>
+  <p class="status">Status: identity and revocation run on testnet; permissions are live; limits and scope, attribution and KYB linkage are planned. Meashra caps damage and makes agents traceable; it does not detect fraud or stop an agent being manipulated.</p>
 </div></section>
 
 <section id="verify"><div class="wrap">
@@ -117,7 +119,7 @@ footer a{color:var(--mute)}
   <p>We are working with a small number of design partners to shape how agents get verified. We would like to hear from regulated organizations (financial services, fintech and crypto platforms, payment providers) that receive agent traffic from other companies, and from companies running AI agents that need their partners to trust them.</p>
   <p style="margin-top:14px"><b>What you get:</b> direct access to the founders, a say in the credential format, authority limits and verifier, and early access to the live beta (Ethereum Sepolia testnet).</p>
   <p style="margin-top:14px"><b>What we ask:</b> 30 minutes to tell us how you check another company’s agent today, and what you cannot check.</p>
-  <p style="margin-top:14px"><b>How it is meant to work:</b> the organization running an agent enrolls it and pays per agent; the organizations that deal with it verify for free. We want to test whether counterparties will ask for this.</p>
+  <p style="margin-top:14px"><b>How it is meant to work:</b> the organization running an agent enrolls it and pays per agent; the organizations that deal with it verify for free. We are looking for the first counterparties to ask their agent partners to enroll.</p>
   <div class="btns" style="margin-top:20px">
     <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
     <a class="btn s" href="https://accounts.meashra.com/sign-in" target="_blank" rel="noopener">Sign in to the early-access dashboard</a>
