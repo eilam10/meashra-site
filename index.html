@@ -55,18 +55,18 @@ footer a{color:var(--mute)}
 <body>
 <header><div class="wrap">
   <a class="logo" href="/">Meas<span>hra</span></a>
-  <nav><a href="#problem">Problem</a><a href="#how">How it works</a><a href="#verify">Verify</a><a class="keep" href="https://accounts.meashra.com/sign-in" target="_blank" rel="noopener">Sign in</a></nav>
+  <nav><a href="#problem">Problem</a><a href="#verify">Verify</a><a href="#how">How it works</a><a class="keep" href="https://accounts.meashra.com/sign-in" target="_blank" rel="noopener">Sign in</a></nav>
 </div></header>
 
 <main>
 <div class="wrap">
   <div class="hero">
-    <span class="badge">Early access · Design partners welcome</span>
+    <span class="badge">Early access · Live on testnet</span>
     <h1>Who vouches for this AI agent?</h1>
     <p class="eyebrow" style="margin:0 0 14px">Cross-Organizational Agent Verification</p>
     <p class="lead">A neutral verification layer for AI agents. Any organization can independently verify another company’s AI agents: who they are, what they may do, and whether they’ve been revoked.</p>
     <div class="btns">
-      <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
+      <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20early%20access&body=Organization%3A%0D%0ARole%3A%0D%0AHow%20we%20check%20AI%20agents%20from%20other%20companies%20today%3A%0D%0A%0D%0AWe%20would%20want%20early%20access%20to%20the%20verification%20API%20when%20it%20is%20ready.">Join the early-access list</a>
       <a class="btn s" href="https://verify.meashra.com" target="_blank" rel="noopener">Verify an agent</a>
     </div>
   </div>
@@ -77,6 +77,15 @@ footer a{color:var(--mute)}
   <h2>Organizations know how to trust each other. They don’t yet know how to verify each other’s AI agents.</h2>
   <div class="problem">Picture a hedge fund’s AI execution agent requesting access to an exchange. The exchange has no independent way to verify the agent, and a malicious agent can act faster than a human fraudster. The other side needs three answers: who the agent is, what it is authorized to do, and whether it has been revoked. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
   <p class="callout">Identity platforms such as Okta control who can access your own systems. Meashra is building the layer that lets organizations independently verify the AI agents acting between them.</p>
+</div></section>
+
+<section id="verify"><div class="wrap">
+  <div class="eyebrow">Live today</div>
+  <h2>Check an agent yourself</h2>
+  <div class="verify">
+    <p>The public verifier reads Meashra’s public registry (Ethereum Sepolia testnet) directly. It calls no Meashra server and needs no account or key of ours. It shows whether an agent is registered, whether it was revoked, and whether a presented DID document matches the chain.</p>
+    <a class="btn p" href="https://verify.meashra.com" target="_blank" rel="noopener">Open the verifier</a>
+  </div>
 </div></section>
 
 <section id="how"><div class="wrap">
@@ -95,35 +104,26 @@ footer a{color:var(--mute)}
 <section id="why"><div class="wrap">
   <div class="eyebrow">Why Meashra</div>
   <h2>What another organization can check</h2>
-  <p class="mute">Three things every counterparty needs to know. Attribution and KYB linkage are next.</p>
+  <p class="mute">Three things every counterparty needs to know.</p>
   <div class="grid">
     <div class="card"><h3>Who the agent is</h3><p>Cryptographic proof that the caller controls the agent’s identity key (its DID), and that it is registered, with who registered it and when. Live on testnet.</p></div>
-    <div class="card"><h3>What it’s authorized to do</h3><p>A credential stating the agent’s permissions. The permissions part is live. Spending limits and scope per agent are next, not built; enforced outside the agent, they cap the damage if an agent is manipulated.</p></div>
+    <div class="card"><h3>What it’s authorized to do</h3><p>A credential stating the agent’s permissions. Live on testnet. Coming next: spending limits and scope per agent, enforced outside the agent to cap the damage if an agent is manipulated.</p></div>
     <div class="card"><h3>Whether it has been revoked</h3><p>Public, final revocation, with block and time shown. Live on testnet.</p></div>
-    <div class="card"><h3>What we’re building next</h3><p>Attribution: access events anchored as Merkle roots, so a disputed action can be traced to an agent. KYB linkage ties an agent to a verified business.</p></div>
+    <div class="card"><h3>Coming next</h3><p>Authority limits and scope; attribution (access events anchored as Merkle roots, so a disputed action can be traced to an agent); and KYB linkage to a verified business.</p></div>
   </div>
-  <p class="status">Status: identity and revocation run on testnet; permissions are live; limits and scope, attribution and KYB linkage are next. Meashra caps damage and makes agents traceable; it does not detect fraud or stop an agent being manipulated.</p>
-</div></section>
-
-<section id="verify"><div class="wrap">
-  <div class="eyebrow">Live today</div>
-  <h2>Check an agent yourself</h2>
-  <div class="verify">
-    <p>The public verifier reads Meashra’s public registry (Ethereum Sepolia testnet) directly. It calls no Meashra server and needs no account or key of ours. It shows whether an agent is registered, whether it was revoked, and whether a presented DID document matches the chain.</p>
-    <a class="btn p" href="https://verify.meashra.com" target="_blank" rel="noopener">Open the verifier</a>
-  </div>
+  <p class="status">Live today on testnet: identity, permissions credential, public revocation and the public verifier. Coming next: authority limits and scope, attribution, KYB linkage. Meashra does not detect fraud or stop an agent being manipulated.</p>
 </div></section>
 
 <section id="partners"><div class="wrap">
   <div class="eyebrow">Early access</div>
-  <h2>Design partners</h2>
-  <p>We are working with a small number of design partners to shape how agents get verified. We would like to hear from regulated organizations (financial services, fintech and crypto platforms, payment providers) that receive agent traffic from other companies, and from companies running AI agents that need their partners to trust them.</p>
+  <h2>Join the early-access list</h2>
+  <p>We are keeping a list of organizations that receive AI-agent traffic from other companies and want to verify it: financial services, fintech and crypto platforms, payment providers. Tell us how you check another company’s agent today, and we will add you for early access to the verification API when it is ready. Joining is non-binding, with no fee.</p>
   <p style="margin-top:14px"><b>What you get:</b> direct access to the founders, a say in the credential format, authority limits and verifier, and early access to the live beta (Ethereum Sepolia testnet).</p>
-  <p style="margin-top:14px"><b>What we ask:</b> 5 minutes to tell us how you check another company’s agent today, and what you cannot check.</p>
+  <p style="margin-top:14px"><b>What we ask:</b> a two-line email saying you would want this, and 5 minutes to tell us what you cannot check today.</p>
   <p style="margin-top:14px"><b>How it is meant to work:</b> the organization running an agent enrolls it and pays per agent; the organizations that deal with it verify for free. We are looking for the first counterparties to ask their agent partners to enroll.</p>
   <div class="btns" style="margin-top:20px">
-    <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
-    <a class="btn s" href="https://accounts.meashra.com/sign-in" target="_blank" rel="noopener">Sign in to the early-access dashboard</a>
+    <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20early%20access&body=Organization%3A%0D%0ARole%3A%0D%0AHow%20we%20check%20AI%20agents%20from%20other%20companies%20today%3A%0D%0A%0D%0AWe%20would%20want%20early%20access%20to%20the%20verification%20API%20when%20it%20is%20ready.">Join the early-access list</a>
+    <a class="btn s" href="mailto:eilam@meashra.com?subject=Meashra%20design%20partner">Become a design partner</a>
   </div>
 </div></section>
 </main>
