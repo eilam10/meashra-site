@@ -82,13 +82,13 @@ footer a{color:var(--mute)}
   <div class="eyebrow">The problem</div>
   <h2>Organizations know how to trust each other. They don’t yet know how to verify each other’s AI agents.</h2>
   <div class="problem">Picture a hedge fund’s AI execution agent requesting access to an exchange. The exchange has no independent way to verify the agent, and a malicious agent can act faster than a human fraudster. The other side needs three answers: who the agent is, what it is authorized to do, and whether it has been revoked. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
-  <p style="margin-top:20px"><b>Passport control for AI agents.</b> An impersonating agent can request payments, place orders or pull data. A compromised one keeps acting until someone revokes it. Checking who is at the door is a cheap first control, and a public revocation check shows every organization the same answer.</p>
-  <p class="callout">Identity platforms such as Okta control who can access your own systems. Meashra is building the layer that lets organizations independently verify the AI agents acting between them.</p>
+  <p class="callout" style="margin-top:20px">Identity platforms such as Okta control who can access your own systems. Meashra is building the layer that lets organizations independently verify the AI agents acting between them.</p>
 </div></section>
 
 <section id="verify"><div class="wrap">
   <div class="eyebrow">Live today</div>
   <h2>Check an agent yourself</h2>
+  <p style="margin:12px 0 22px"><b>Passport control for AI agents.</b> An impersonating agent can request payments, place orders or pull data. A compromised one keeps acting until someone revokes it. Checking who is at the door is a cheap first control, and a public revocation check shows every organization the same answer.</p>
   <div class="verify">
     <p>The public verifier reads Meashra’s public registry (Ethereum Sepolia testnet) directly. It calls no Meashra server and needs no account or key of ours. It shows whether an agent is registered, whether it was revoked, and whether a presented DID document matches the chain.</p><p>Try it with a demo agent:<br><code style="word-break:break-all;font-size:0.8em">did:nhim:11155111:0xfccca2b4fde138479d3972fe63f57453002f1456</code>Agents not registered with Meashra show as unregistered.</p>
     <a class="btn p" href="https://verify.meashra.com" target="_blank" rel="noopener">Try the public verifier</a>
