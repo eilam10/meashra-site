@@ -83,7 +83,7 @@ footer a{color:var(--mute)}
   <div class="eyebrow">The problem</div>
   <h2>Organizations know how to trust each other. They don’t yet know how to verify each other’s AI agents.</h2>
   <div class="problem">Picture a hedge fund’s AI execution agent requesting access to an exchange. The exchange has no independent way to verify the agent. An impersonating agent can request payments, place orders or pull data, and a compromised one keeps acting until someone revokes it. The other side needs three answers: who the agent is, what it is authorized to do, and whether it has been revoked. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
-  <p class="callout" style="margin-top:20px">Identity platforms such as Okta control who can access your own systems. Meashra is building the layer that lets organizations independently verify the AI agents acting between them.</p>
+  <p class="callout" style="margin-top:20px">Meashra checks an agent from an organization you have no integration with.</p>
 </div></section>
 
 <section id="verify"><div class="wrap">
@@ -116,10 +116,10 @@ footer a{color:var(--mute)}
   <h2>What another organization can check</h2>
   <p class="mute">Three checks to make before letting another company’s agent in.</p>
   <div class="grid">
-    <div class="card"><h3>Who the agent is</h3><p>Cryptographic proof that the caller controls the agent’s identity key (its DID), and that it is registered, with who registered it and when. Live on testnet.</p></div>
-    <div class="card"><h3>What it’s authorized to do</h3><p>A credential stating the agent’s permissions. Live on testnet. Coming next: spending limits and scope per agent, enforced outside the agent to cap the damage if an agent is manipulated.</p></div>
+    <div class="card"><h3>Who the agent is</h3><p>Cryptographic proof that the agent presenting itself controls its identity key (its DID), and that it is registered, with who registered it and when. Live on testnet.</p></div>
+    <div class="card"><h3>What it’s authorized to do</h3><p>Coming next: spending limits and scope per agent, enforced outside the agent to cap the damage if an agent is manipulated.</p></div>
     <div class="card"><h3>Whether it has been revoked</h3><p>Public, final revocation, with block and time shown. Live on testnet.</p></div>
-    <div class="card"><h3>Coming next</h3><p>Enforcement of permissions: authority limits and scope; attribution (access events anchored on the public chain, so a disputed action can be traced to an agent); and KYB linkage to a verified business.</p></div>
+    <div class="card"><h3>Coming next</h3><p>Attribution (access events anchored on the public chain, so a disputed action can be traced to an agent) and KYB linkage to a verified business.</p></div>
   </div>
   </div></section>
 
