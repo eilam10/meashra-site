@@ -83,8 +83,8 @@ footer a{color:var(--mute)}
   <div class="eyebrow">The problem</div>
   <h2>Impersonating, compromised and revoked agents</h2>
   <div class="grid" style="margin-bottom:16px">
-    <div class="card"><h3>Payments</h3><p>A company’s AI payments agent asks a payment provider to change a supplier’s bank details and release a payment.</p></div>
-    <div class="card"><h3>Trading</h3><p>A hedge fund’s AI execution agent requests access to an exchange.</p></div>
+    <div class="card"><h3>Payments</h3><p>A company’s payments agent asks its payment provider to change a supplier’s bank details and release a payment.</p></div>
+    <div class="card"><h3>Trading</h3><p>A hedge fund’s execution agent requests access to an exchange.</p></div>
   </div>
   <div class="problem" style="font-family:inherit;font-style:normal;font-weight:400;font-size:16px;line-height:1.6">In both cases the receiver knows the company and has issued it API credentials, but a credential does not say which of the company’s agents is using it, whether it is the intended agent or one a vendor runs, whether the company has since revoked the agent, or whether the credential has been stolen. An impersonating agent can request payments, place orders or pull data, and a compromised one keeps acting until someone revokes it. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
   <p class="callout" style="margin-top:20px;font-size:20px;max-width:none">Even when companies integrate, they still can’t tell which agent is acting.</p>
