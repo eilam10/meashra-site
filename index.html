@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meashra | Passport control for AI agents</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='%230F172A'/%3E%3Cg transform='translate(28,38) scale(0.1542)'%3E%3Cpolygon fill='%232DD4A8' transform='translate(-27,-26)' points='27,26 409,26 676,645 942,26 1324,26 1324,1188 1040,1188 1038,347 768,966 583,966 313,347 311,1188 27,1188'/%3E%3C/g%3E%3C/svg%3E">
-<meta name="description" content="Reject fake and revoked AI agents before they enter your organization. A neutral verification layer for AI agents.">
+<meta name="description" content="Check which AI agent is at your door, not just which company. A neutral layer for cross-organizational agent verification.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://meashra.com/">
 <meta property="og:title" content="Meashra | Passport control for AI agents">
-<meta property="og:description" content="Reject fake and revoked AI agents before they enter your organization.">
+<meta property="og:description" content="Check which AI agent is at your door, not just which company.">
 <meta property="og:image" content="https://meashra.com/og-image-v2.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
@@ -71,7 +71,7 @@ footer a{color:var(--mute)}
   <div class="hero">
     <span class="badge">Early access · Live on testnet</span>
     <h1>Who vouches for this AI agent?</h1>
-    <p class="hl" style="margin:24px 0 18px;font-size:20px;font-weight:700;line-height:1.35;color:var(--text)">Reject fake and revoked agents before they enter your organization.</p>
+    <p class="hl" style="margin:24px 0 18px;font-size:20px;font-weight:700;line-height:1.35;color:var(--text)">Check which agent is at your door, not just which company.</p>
     <p class="lead" style="color:var(--text);font-size:17px"><strong style="color:var(--acc)">Cross-Organizational Agent Verification.</strong> A neutral layer where any organization can independently verify another company’s AI agents: who they are, what they may do, and whether they’ve been revoked.</p>
     <div class="btns">
       <a class="btn p" href="mailto:eilam@meashra.com?subject=Meashra%20early%20access&body=Name%3A%0D%0AOrganization%3A%0D%0ARole%3A%0D%0A%0D%0AWe%20would%20want%20early%20access%20to%20Meashra%27s%20cross-organizational%20agent%20verification.">Join the early-access list</a>
@@ -81,12 +81,12 @@ footer a{color:var(--mute)}
 
 <section id="problem"><div class="wrap">
   <div class="eyebrow">The problem</div>
-  <h2>Impersonating, compromised and revoked agents</h2>
+  <h2>Impersonating and compromised agents</h2>
   <div class="grid" style="margin-bottom:16px">
     <div class="card"><h3>Payments</h3><p>A company’s payments agent asks its payment provider to change a supplier’s bank details and release a payment.</p></div>
     <div class="card"><h3>Trading</h3><p>A hedge fund’s execution agent requests access to an exchange.</p></div>
   </div>
-  <div class="problem" style="font-family:inherit;font-style:normal;font-weight:400;font-size:16px;line-height:1.6">In both cases the receiver knows the company and has issued it API credentials, but a credential does not say which of the company’s agents is behind the request, whether it is the intended agent or one run by a vendor on the company’s behalf, whether the company has since revoked the agent, or whether the credential has been stolen. An impersonating agent can request payments, place orders or pull data, and a compromised one keeps acting until someone revokes it. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
+  <div class="problem" style="font-family:inherit;font-style:normal;font-weight:400;font-size:16px;line-height:1.6">In both cases the receiver knows the company and has issued it API credentials, but a credential does not say which of the company’s agents is behind the request, whether it is the agent meant to make it or one run by a vendor on the company’s behalf, whether the company has since revoked it, or whether the credential has been stolen. An impersonating agent can request payments, place orders or pull data, and a compromised one keeps acting until someone revokes it. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
   <p class="callout" style="margin-top:20px;font-size:20px;max-width:none">Even when companies integrate, they still can’t tell which agent is acting.</p>
 </div></section>
 
