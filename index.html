@@ -87,13 +87,12 @@ footer a{color:var(--mute)}
     <div class="card"><h3>Trading</h3><p>A hedge fund’s execution agent requests access to an exchange.</p></div>
   </div>
   <div class="problem" style="font-family:inherit;font-style:normal;font-weight:400;font-size:16px;line-height:1.6">In both cases the receiver knows the company and has issued it API credentials, but a credential does not say which of the company’s agents is behind the request, whether a vendor is running it, or whether it has since been revoked. An impersonating agent pretends to be the company’s. A compromised one is the company’s own, taken over, and keeps acting until someone revokes it. Either can request payments, place orders or pull data. Each vendor vouches only inside its own system, and your own audit logs show only your side.</div>
-  <p class="callout" style="margin-top:20px;font-size:20px;max-width:none">Check which agent is at your door, not just which company.</p>
 </div></section>
 
 <section id="verify"><div class="wrap">
   <div class="eyebrow">Live today</div>
   <h2>Passport control for AI agents</h2>
-  <p style="margin:12px 0 22px">Checking who is at the door is a cheap first control, and a public revocation check shows every organization the same answer.</p>
+  <p style="margin:12px 0 22px">Check which agent is at your door, not just which company. It is a cheap first control, and a public revocation check shows every organization the same answer.</p>
   <p style="margin:0 0 10px;font-weight:700">Check an agent yourself</p>
   <div class="verify">
     <div><p>The public verifier reads Meashra’s public registry (Ethereum Sepolia testnet) directly. It calls no Meashra server and needs no account or key of ours. It shows whether an agent is registered, whether it was revoked, and whether a presented DID document matches the chain. Agents not registered with Meashra show as unregistered.</p></div>
