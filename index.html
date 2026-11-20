@@ -92,7 +92,7 @@ footer a{color:var(--mute)}
 <section id="verify"><div class="wrap">
   <div class="eyebrow">Live today</div>
   <h2>Passport control for AI agents</h2>
-  <p style="margin:12px 0 22px">Check which agent is at your door, not just which company. It is a cheap first control, and a public revocation check shows every organization the same answer.</p>
+  <p style="margin:12px 0 22px">Check which agent is at your door, not just which company. Checking is a cheap first control, and a public revocation check shows every organization the same answer.</p>
   <p style="margin:0 0 10px;font-weight:700">Check an agent yourself</p>
   <div class="verify">
     <div><p>The public verifier reads Meashra’s public registry (Ethereum Sepolia testnet) directly. It calls no Meashra server and needs no account or key of ours. It shows whether an agent is registered, whether it was revoked, and whether a presented DID document matches the chain. Agents not registered with Meashra show as unregistered.</p></div>
@@ -119,7 +119,7 @@ footer a{color:var(--mute)}
   <h2>What another organization can check</h2>
   <p class="mute">Three checks to make before letting another company’s agent in.</p>
   <div class="grid">
-    <div class="card"><h3>Who the agent is</h3><p>Cryptographic proof that the agent presenting itself controls its identity key (its DID), and that it is registered, with who registered it and when. Live on testnet.</p></div>
+    <div class="card"><h3>Who the agent is</h3><p>Cryptographic proof that the agent presenting itself controls its identity key (its DID), and that it is registered, with block and time. Live on testnet. Linking it to the verified business behind it (KYB) comes next.</p></div>
     <div class="card"><h3>What it’s authorized to do</h3><p>Spending limits and scope per agent, enforced outside the agent, so a manipulated agent can do only so much. Keys held with MPC: first the registry’s signing key, then agent keys, so no single stolen key can sign. Planned.</p></div>
     <div class="card"><h3>Whether it has been revoked</h3><p>Public, final revocation, with block and time shown. Live on testnet.</p></div>
     <div class="card"><h3>Coming next</h3><p>Attribution (access events anchored on the public chain, so a disputed action can be traced to an agent) and KYB linkage to a verified business.</p></div>
